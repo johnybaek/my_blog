@@ -1,3 +1,32 @@
-{% for page in site.header_pages %}
-  <a href="{{ page.url | relative_url }}">{{ page.title | escape }}</a>
-{% endfor %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>{{ page.title }} | {{ site.title }}</title>
+    <meta name="description" content="{{ site.description }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/style.css">
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav>
+      <ul>
+        {% for page in site.header_pages %}
+          <li><a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a></li>
+        {% endfor %}
+      </ul>
+    </nav>
+
+    <!-- Main content -->
+    <main>
+      {{ content }}
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; {{ site.time | date: "%Y" }} {{ site.title }}. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
