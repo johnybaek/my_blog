@@ -1,8 +1,26 @@
-# Ignore node_modules folder
-node_modules/
+# Ignore the generated site
+_site/
 
-# Ignore log files
+# Ignore Sass cache
+.sass-cache/
+
+# Ignore Jekyll metadata
+.jekyll-metadata
+
+# Ignore Bundler and Ruby artifacts
+Gemfile.lock
+.bundle/
+
+# Ignore log files and temp files
 *.log
+*.tmp
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore node modules if using JS tooling
+node_modules/
 
 # Ignore environment variables
 .env
