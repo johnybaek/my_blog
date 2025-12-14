@@ -1,0 +1,25 @@
+# Site settings
+title: John Baek Personal Blog
+description: This is a experimental site to learn how to build a Jekyll website on Github Pages
+url: https://johnybaek.github.io
+baseurl: "my_blog"  # For user/org sites keep this "", for project sites use "/repo-name"
+
+# Theme
+theme: minima  # You can swap to any supported GitHub Pages theme
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+
+# Permalinks (clean URLs for posts)
+permalink: /:categories/:year/:month/:day/:title/
+
+# Exclusions (avoid committing local/dev files)
+exclude:
+  - node_modules
+  - vendor
+  - Gemfile
+  - Gemfile.lock
+
+# Output directory (Jekyll writes to _site by default)
+destination: _site
