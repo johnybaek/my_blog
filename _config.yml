@@ -7,6 +7,11 @@ baseurl: "/my_blog"  # For user/org sites keep this "", for project sites use "/
 # Theme
 theme: minima  # You can swap to any supported GitHub Pages theme
 
+header_pages:
+  - index.md
+  - about.md
+  - blog.md
+
 # Build settings
 markdown: kramdown
 highlighter: rouge
@@ -23,3 +28,5 @@ exclude:
 
 # Output directory (Jekyll writes to _site by default)
 destination: _site
+
+
