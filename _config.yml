@@ -12,7 +12,7 @@ markdown: kramdown
 highlighter: rouge
 
 # Permalinks (clean URLs for posts)
-permalink: /:title/
+permalink: /:categories/:year/:month/:day/:title/
 
 # Exclusions (avoid committing local/dev files)
 exclude:
