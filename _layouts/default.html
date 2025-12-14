@@ -1,0 +1,3 @@
+{% for page in site.header_pages %}
+  <a href="{{ page.url | relative_url }}">{{ page.title | escape }}</a>
+{% endfor %}
